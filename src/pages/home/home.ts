@@ -228,25 +228,25 @@ export class HomePage {
           fp.loadHealthData().then((data) => {
             let stepcount = data;
             test.steps = parseInt(stepcount[1].value.toString());
-            test.calories = Math.floor(test.steps * 0.8);
-            test.distance = Math.floor(test.steps/3);
+           // test.calories = Math.floor(test.steps * 0.8);
+            //test.distance = Math.floor(test.steps/3);
           }, err => {
             alert('No steps: ' + err);
           });
 
-        /*  fp.loadCaloriesData().then((data) => {
+          fp.loadCaloriesData().then((data) => {
             let calories = data;
             test.calories = parseInt(calories[1].value.toString());
           }, err => {
             alert('No steps: ' + err);
-          });*/
+          });
 
-        /*  fp.loadDistanceData().then((data) => {
+          fp.loadDistanceData().then((data) => {
             let distance = data;
             test.distance = parseInt(distance[1].value.toString());
           }, err => {
             alert('No steps: ' + err);
-          });*/
+          });
 
 
         }, 3000);
