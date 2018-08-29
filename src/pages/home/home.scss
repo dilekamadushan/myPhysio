@@ -1,0 +1,28 @@
+page-home {
+  ion-grid {
+    height: 100%;
+  }
+
+  .battery-indicator {
+    height: 10%;
+  }
+
+  .speed-indicator {
+    height: 70%;
+    overflow: hidden;
+  }
+  .health-indicator {
+    height: 20%;
+  }
+
+  .heart-rate {
+    background-color: map-get($colors, danger);
+    text-align: center;
+  }
+
+  .distance-indicator {
+    background-color: map-get($colors, primary);
+    text-align: center;
+  }
+}
+
